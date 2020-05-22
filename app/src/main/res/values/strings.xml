@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Alerticon</string>
+    <string name="time_tab_text">Weckzeit</string>
+    <string name="data_tab_text">Daten</string>
+    <string name="settings_tab_text">Einstellungen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
