@@ -22,41 +22,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/time_tab_image_desc"
             android:padding="15dp"
             android:src="@drawable/ic_time_tab_black"
-            android:background="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageButton
             android:id="@+id/data_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/data_tab_image_desc"
             android:padding="15dp"
             android:src="@drawable/ic_data_tab_black"
-            android:background="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageButton
             android:id="@+id/settings_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/settings_tab_image_desc"
             android:padding="15dp"
             android:src="@drawable/ic_settings_tab_black"
-            android:background="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/mViewPager"
+        android:paddingTop="60dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

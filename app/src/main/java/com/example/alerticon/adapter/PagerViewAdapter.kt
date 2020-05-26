@@ -1,11 +1,11 @@
-package com.example.alerticon.Adapter
+package com.example.alerticon.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.alerticon.Fragments.DataFragment
-import com.example.alerticon.Fragments.SettingsFragment
-import com.example.alerticon.Fragments.TimeFragment
+import com.example.alerticon.fragments.DataFragment
+import com.example.alerticon.fragments.SettingsFragment
+import com.example.alerticon.fragments.TimeFragment
 
 internal class PagerViewAdapter (fm:FragmentManager?):
         FragmentPagerAdapter(fm!!){

@@ -2,14 +2,10 @@ package com.example.alerticon
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageButton
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.example.alerticon.Adapter.PagerViewAdapter
-import com.google.android.material.tabs.TabItem
-import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.*
+import com.example.alerticon.adapter.PagerViewAdapter
 
 class MainActivity : AppCompatActivity() {
 
