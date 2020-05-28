@@ -8,9 +8,13 @@ import com.example.alerticon.R
 import com.example.alerticon.models.WakeTime
 import kotlinx.android.synthetic.main.layout_time_list_item.view.*
 
-class TimeRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+/**
+ * RecyclerViewAdapter to coordinate RecyclerView items in TimeFragment.kt
+ */
 
+class TimeRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var items: List<WakeTime> = ArrayList()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return TimeViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.layout_time_list_item, parent, false)

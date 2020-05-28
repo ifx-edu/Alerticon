@@ -2,6 +2,10 @@ package com.example.alerticon.data
 
 import com.example.alerticon.models.WakeTime
 
+/**
+ * array as companion object containing all data for the TimeFragment.kt RecyclerView
+ */
+
 class TimeData {
 
     companion object{
@@ -38,13 +42,47 @@ class TimeData {
             )
             list.add(
                 WakeTime(
-                    "8:00",
+                    "08:00",
                     "",
                     "yes"
+                )
+            )
+            list.add(
+                WakeTime(
+                    "08:15",
+                    "",
+                    "no"
+                )
+            )
+            list.add(
+                WakeTime(
+                    "12:45",
+                    "",
+                    "no"
+                )
+            )
+            list.add(
+                WakeTime(
+                    "04:20",
+                    "",
+                    "no"
+                )
+            )
+            list.add(
+                WakeTime(
+                    "15:30",
+                    "",
+                    "no"
+                )
+            )
+            list.add(
+                WakeTime(
+                    "18:15",
+                    "",
+                    "no"
                 )
             )
             return list
         }
     }
-
 }

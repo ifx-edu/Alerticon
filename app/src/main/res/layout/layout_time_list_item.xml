@@ -23,7 +23,7 @@
 
             <TextView
                 android:id="@+id/time_time"
-                android:layout_width="100dp"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="24dp"
@@ -38,13 +38,14 @@
 
             <TextView
                 android:id="@+id/time_day"
-                android:layout_width="100dp"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:text="@string/day_placeholder"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/time_repeat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/time_time" />
 
@@ -57,8 +58,8 @@
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/alert_switch"
-                app:layout_constraintHorizontal_bias="0.73"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/time_day"
                 app:layout_constraintTop_toBottomOf="@+id/time_time" />
 
             <TextView
@@ -70,7 +71,7 @@
                 android:textSize="12sp"
                 app:layout_constraintBottom_toTopOf="@+id/time_repeat"
                 app:layout_constraintEnd_toStartOf="@+id/alert_switch"
-                app:layout_constraintHorizontal_bias="0.32"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/time_time"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.5" />

@@ -53,14 +53,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorLink="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/repeat_input_label"
         app:layout_constraintTop_toBottomOf="@+id/time_input"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+
+        android:buttonTint="@color/colorPrimaryDark"/>
 
     <ImageButton
         android:id="@+id/confirm_time_button"

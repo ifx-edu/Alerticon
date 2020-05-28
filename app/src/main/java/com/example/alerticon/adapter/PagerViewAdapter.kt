@@ -7,6 +7,10 @@ import com.example.alerticon.fragments.DataFragment
 import com.example.alerticon.fragments.SettingsFragment
 import com.example.alerticon.fragments.TimeFragment
 
+/**
+ * ViewPagerAdapter to change to the right tab fragment
+ */
+
 internal class PagerViewAdapter (fm:FragmentManager?):
         FragmentPagerAdapter(fm!!){
     override fun getItem(position: Int): Fragment {

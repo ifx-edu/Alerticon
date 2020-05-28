@@ -13,10 +13,12 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:focusable="true"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="68dp"
         app:srcCompat="@drawable/ic_add_time_button" />
 
     <androidx.recyclerview.widget.RecyclerView

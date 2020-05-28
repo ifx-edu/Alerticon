@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.alerticon.R
 
 /**
- * A simple [Fragment] subclass.
+ * A simple [Fragment] subclass for settings, wip.
  */
 class SettingsFragment : Fragment() {
 

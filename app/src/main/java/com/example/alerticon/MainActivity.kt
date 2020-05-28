@@ -7,6 +7,10 @@ import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.example.alerticon.adapter.PagerViewAdapter
 
+/**
+ * initial view, coordinates viewPager and tab resources
+ */
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mViewPager: ViewPager
@@ -23,11 +27,13 @@ class MainActivity : AppCompatActivity() {
 
         mViewPager = findViewById(R.id.mViewPager)
 
-        // init image buttons
+        // init image buttons for tabs
 
         timeButton = findViewById(R.id.time_tab)
         dataButton = findViewById(R.id.data_tab)
         settingsButton = findViewById(R.id.settings_tab)
+
+        // set viewpager adapter for tabs and set tab limit
 
         mPagerAdapter = PagerViewAdapter(supportFragmentManager)
         mViewPager.adapter = mPagerAdapter
@@ -36,6 +42,8 @@ class MainActivity : AppCompatActivity() {
         // add page change listener
 
         mViewPager.addOnPageChangeListener(object :ViewPager.OnPageChangeListener{
+
+            // change current tab according to user input
 
             override fun onPageScrollStateChanged(state: Int) {
 
@@ -54,11 +62,18 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        // set default tab
+
         mViewPager.currentItem = 0
         timeButton.setImageResource(R.drawable.ic_time_tab_dark)
 
     }
 
+    /**
+     * sets tab images according to the current viewPager position
+     *
+     * @param position current viewPager position
+     */
     private fun changingTabs(position: Int) {
 
         if(position == 0){
@@ -76,6 +91,5 @@ class MainActivity : AppCompatActivity() {
             dataButton.setImageResource(R.drawable.ic_data_tab_light)
             settingsButton.setImageResource(R.drawable.ic_settings_tab_dark)
         }
-
     }
 }
