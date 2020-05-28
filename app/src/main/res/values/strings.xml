@@ -3,8 +3,7 @@
     <string name="time_tab_text">Weckzeit</string>
     <string name="data_tab_text">Daten</string>
     <string name="settings_tab_text">Einstellungen</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -24,5 +23,9 @@
     <string name="settings_tab_image_desc">Settings Tab Image</string>
     <string name="time_placeholder">Time</string>
     <string name="day_placeholder">Day</string>
-    <string name="repeat_placeholder">Repeat</string>
+    <string name="repeat_placeholder">repeat</string>
+    <string name="time_input_hint">08:00</string>
+    <string name="repeat_input_label_text">Repeat:</string>
+    <string name="time_input_label_text">Time:</string>
+    <string name="add_time_button_desc">apply new alert</string>
 </resources>
